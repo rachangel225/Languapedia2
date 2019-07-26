@@ -1,26 +1,30 @@
 html {
   font-family: sans-serif;
-  font-weight: lighter;
+  font-weight: 10px;
   scroll-behavior: smooth;
+}
+
+.Title{
+  text-align: center;
+  font-size: 30px;
+  padding: 3%;
+  background-image: url('https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
 }
 .header{
   font-family: sans-serif;
-  padding: 1px;
-  text-align: center;
-  background: #e8aba0;
-  color: white;
   font-weight: lighter;
+  text-align: center;
+  background-color: : #e8aba0;
+  color: black;
   font-size: 40px;
 }
-#Home {
-  display:block;
-}
+
 #HP_pic{
-	height: 60%;
-	width: 45%;
+	height: 65%;
+	width: 50%;
   margin-right: 5%;
   margin-top: 5%;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 .foodImg{
   height: 50%;
@@ -65,15 +69,17 @@ html {
   clear: both;
 }
 
-{font-family: Courier;}
+
+
+
+/* {font-family: Courier;} */
 /* Style the tab */
-.tab {
+/* .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
-
-/* Style the buttons inside the tab */
+/*
 .tab button {
   background-color: inherit;
   float: left;
@@ -82,67 +88,46 @@ html {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #839ba6;
 }
-
-/* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
-}
+  background-color: #ccc
+} */
 
-/* Style the tab content */
-.tabcontent {
-  background-color: #e8aba0;
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+
 
 .Page {
-	background-color: white;
 	text-align: left;
-    font-size: 400%;
+    font-size: 60px;
     color: #3b3b3b;
-    line-height: 100%;
-    padding: 50px;
+    line-height: 80%;
+    margin-top: 150px;
 }
 
-#paragraph2{
-  font-family: sans-serif;
-  padding: 1px;
-  background: #a5c4d9;
-  font-weight: lighter;
-
-  font-size: 50px;
-  color: #3b3b3b;
-  line-height: 30px;
-}
-
+/* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
   height: 100%;
+  margin: 0;
+  padding-left: 2%;
+  padding-right: 2%;\
 }
+
+
 
 .parallax {
   /* The image used */
   background-image: url('https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
 
-  height: 80%;
+  height: 40%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#parallax2{
-  height:20%;
 }
 
 
@@ -156,27 +141,6 @@ body, html {
 }
 
 
-
-
-.collapsible {
-  background-color: #dae3f2;
-  color: #444;
-  cursor: pointer;
-  padding: 17px;
-  width: 70%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 30px;
-  font-family: serif;
-  border-radius: 12px;
-
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #90abd6;
-}
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
@@ -232,13 +196,53 @@ color: white;
  }
 }
 
-.tablink{
-  background-color: : #a2ccde;
-  color: white;
-  float: left;
-  border: none;
-  cursor: pointer;
-  padding: 16px;
-  font-size: 20px;
-  width: 16.6%;
-}
+  width: 16.6%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px;
+    height: 100%;
+  }
+
+
+
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.667%
+  }
+
+  .tablink:hover {
+    background-color: #777;
+  }
+
+
+  #Home {background-color: #f5c8c1;
+  padding: 5%;
+  padding-bottom: 30%;}
+  #History {background-color: #b4cee0;}
+  #Entertainment {background-color: #f5c8c1;}
+  #Food {background-color: #ffd9a3;}
+  #Conversation {background-color: white;}
+  #Translator {background-color: #bfebb2;}

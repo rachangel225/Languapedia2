@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
   <link rel="stylesheet" href="FProj_styling copy (2).css">
-  <script src="Translator.js" type="text/javascript"></script>
-  <meta charset="utf-8">
-</head>
-<body>
 
-  <div class="header">
-    <p>Languapedia</p>
-  <div class="tab">
-    <button class="tablink" onclick="tabOpen('Home', this, #839ba6)">Home</button>
-    <button class="tablink" onclick="tabOpen('History', this, #839ba6)">History</button>
-    <button class="tablink" onclick="tabOpen('Popular Trends in China', this, #839ba6)">Popular Trends in China</button>
-    <button class="tablink" onclick="tabOpen('Food', this, #839ba6)">Food</button>
-    <button class="tablink" onclick="tabOpen('Conversation', this, #839ba6)">Conversation</button>
+  <script src="FProj_RachelEdits.js" type="text/javascript"></script>
+
+  <meta charset="utf-8">
+  <title>Languapedia</title>
+</head>
+
+
+<body>
+  <div class="Title">
+    <h1>Languapedia</h1>
   </div>
+
+
+
+  <button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('History', this)" >History</button>
+  <button class="tablink" onclick="openPage('Entertainment', this)">Entertainment</button>
+  <button class="tablink" onclick="openPage('Food', this)">Food</button>
+  <button class="tablink" onclick="openPage('Conversation', this)">Conversation</button>
+  <button class="tablink" onclick="openPage('Translator', this)">Translator</button>
+
+
+
+
   <div id="Home" class="tabcontent">
-    <div class="example1">
+    <!-- <div class="example1" class="header">
       <h1>LANGUAPEDIA</h1>
-    </div>
-    <img align= right src="https://assets.nst.com.my/images/articles/13ntforeignlanguage2_1518503581.jpg"/>
+    </div> -->
+    <img id="HP_pic" align= right src="https://assets.nst.com.my/images/articles/13ntforeignlanguage2_1518503581.jpg"/>
 
     <div class="Page" align=left>
       <p>The <strong>Must-Have</strong></p>
@@ -33,19 +44,21 @@
 
 
 
+  <div id="History" class="tabcontent">
+    <div class="header">
+      <h1>History</h1>
+
+    </div>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
   </div>
 
-  <div class="Page" id="paragraph2" align=left>
-  </div>
 
 
-  <div class="parallax" id="parallax2"></div>
-
-  <div id="Popular Trends in China" class="tabcontent">
-    <div class="example1">
+  <div id="Entertainment" class="tabcontent">
+    <div class="example1" class="header">
       <h1>MUSIC</h1>
     </div>
-    <p>
+    <div class="header">
       yīn yuè<br>音乐<br>Example sentence：<br>Nǐ xǐhuān tīng shénme yàng de yīnyuè?<br>你喜欢听什么样的音乐<br>What kind of music do you like to listen to?<br><br>
       Here are some music artists that are very popular in China right now:<br><br>
       1. Joker Xue：<br>
@@ -60,50 +73,180 @@
       <a href=https://www.youtube.com/watch?v=bBcp_ljCBGU> 童话 - Fairytale</a><br>
       5. Eason Chan
       <a href=https://www.youtube.com/watch?v=UsFQ9kbpQhw> 好久不见 - Long time no see</a><br><br>
+    </div>
 
-      <div class="example1">
+      <div class="example1" class="header">
         <h1>TV SHOWS</h1>
       </div>
-      <br>Diàn shì jù<br>电视剧<br>Nín zuì xǐhuān de diànshìjù shì shénme<br>你最喜欢的电视剧是什么<br>What is your favorite TV Show?<br>
-      <br>Here are some popular TV shows in China right now:<br><br>
-      1. The Story Of Minglan 知否知否应是绿肥红瘦 <br>
-      2. Anti-Japanese 荡寇 <br>
-      3. I Will Never Let You Go 小女花不弃 <br>
-      4. Story of Yangxi Palace 延禧攻略 <br>
-      5. Happy Camp <br>
-      6. Ashes of Love 香蜜沉沉烬如霜 <br>
-    </p>
+
+      <div class="header">
+        <br>Diàn shì jù<br>电视剧<br>Nín zuì xǐhuān de diànshìjù shì shénme<br>你最喜欢的电视剧是什么<br>What is your favorite TV Show?<br>
+        <br>Here are some popular TV shows in China right now:<br><br>
+        1. The Story Of Minglan 知否知否应是绿肥红瘦 <br>
+        2. Anti-Japanese 荡寇 <br>
+        3. I Will Never Let You Go 小女花不弃 <br>
+        4. Story of Yangxi Palace 延禧攻略 <br>
+        5. Happy Camp <br>
+        6. Ashes of Love 香蜜沉沉烬如霜 <br>
+      </div>
+
   </div>
 
 
-  <div class ="row">
-    <div id="Food" class="tabcontent">
-      <div class="example1">
-        <h1>FOOD</h1>
+
+
+
+  <div id="Food" class="tabcontent">
+    <div class="example1" class="header">
+      <h1>FOOD</h1>
+    </div>
+    <div> Do you ever find yourself at a Chinese restaurant having no idea what to order? Well you’ve come to the right place! Here are the most popular dishes in the Chinese cuisine that you need to try ASAP!<br>
+      <div class="column"> Jiǎozi<br>饺子<br>Dumplings<br><img class="foodImg" src= http://s15.sinaimg.cn/mw690/a5bdca08gx6CKV4hHf86e&690> </div>
+      <div class="column">Bāozi<br>包子<br>steamed bun<br><img class="foodImg" src= https://omnivorescookbook.com/wp-content/uploads/2018/01/Kimchi-Pork-Steamed-Bun-9.jpg></div>
+      <div class="column">Miàntiáo<br>面条<br>noodles<br><img class="foodImg" src=https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodles4-1-600x900.jpg></div>
+      <div class="column">chá<br>茶<br>Tea<br><img class="foodImg" src=https://st2.depositphotos.com/1761693/7800/i/950/depositphotos_78002316-stock-photo-green-tea-with-jasmin-top.jpg></div>
+      <div class="column">nǎichá<br>奶茶<br>Milk tea<br><img class="foodImg" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Classic_bubble_tea.jpg/220px-Classic_bubble_tea.jpg></div>
+      <p class="column">tāng<br>汤<br>Soup<br><img class="foodImg" src=https://www.gimmesomeoven.com/wp-content/uploads/2017/01/Chinese-Hot-and-Sour-Soup-Recipe-1-2.jpg></p>
+      <a href=https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery>The best Chinese resturaunt in every state: The Daily Meal</a>
+    </div>
+  </div>
+
+
+
+
+
+    <div id="Conversation" class="tabcontent">
+      <div class="row">
+
+        <div class="example1" class="header">
+          <h1>BASIC WORDS</h1>
+        </div>
+        <div class="column2">
+          <p id="wo">1. <br>Wǒ<br><strong>我</strong><br>I</p>
+          <p id="ni">2.<br>Nǐ<br><strong>你</strong><br>You</p>
+          <p id="wo">3.<br>Jiā<br><strong>家</strong><br>Home</p>
+          <p id="ni">4.<br>Ài<br><strong>爱</strong><br>English meaning: love</p>
+          <p id="wo">5.<br>xiǎng<br><strong>想</strong><br>miss</p>
+          <p id="ni">6.<br>Hěn<br><strong>很</strong><br>very</p>
+          <p id="wo">7.<br> Bù<br><strong>不</strong><br>No</p>
+        </div>
+        <div class="column2">
+          <p id="wo">Sentence:<br>Wǒ wǔ suìle<br><strong>我</strong>五岁了。<br>I am five years old.</p>
+          <p id="ni">Sentence:<br>Nǐ jiào shénme míngzì<br><strong>你</strong>叫什么名字<br>What is your name?</p>
+          <p id="wo">Sentence:<br>Wǒ xiǎng huí jiā<br>我想回<strong>家</strong>。<br>I want to go home.</p>
+          <p id="ni">Sentence:<br>Wǒ ài nǐ<br>我<strong>爱</strong>你。<br>I love you.</p>
+          <p id="wo">Sentence:<br>Wǒ xiǎng nǐ<br>我<strong>想</strong>你<br>I miss you.</p>
+          <p id="ni">Sentence:<br>Tā hěn měilì<br>她<strong>很</strong>美丽。<br>She is very beautiful.</p>
+          <p id="wo">Sentence:<br>Wǒ bùyào qù xuéxiào.<br>我<strong>不</strong>要去学校<br>I do not want to go to school.</p>
+        </div>
       </div>
-      <div> Do you ever find yourself at a Chinese restaurant having no idea what to order? Well you’ve come to the right place! Here are the most popular dishes in the Chinese cuisine that you need to try ASAP!<br>
-        <div class="column"> Jiǎozi<br>饺子<br>Dumplings<br><img class="foodImg" src= http://s15.sinaimg.cn/mw690/a5bdca08gx6CKV4hHf86e&690> </div>
-        <div class="column">Bāozi<br>包子<br>steamed bun<br><img class="foodImg" src= https://omnivorescookbook.com/wp-content/uploads/2018/01/Kimchi-Pork-Steamed-Bun-9.jpg></div>
-        <div class="column">Miàntiáo<br>面条<br>noodles<br><img class="foodImg" src=https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodles4-1-600x900.jpg></div>
-        <div class="column">chá<br>茶<br>Tea<br><img class="foodImg" src=https://st2.depositphotos.com/1761693/7800/i/950/depositphotos_78002316-stock-photo-green-tea-with-jasmin-top.jpg></div>
-        <div class="column">nǎichá<br>奶茶<br>Milk tea<br><img class="foodImg" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Classic_bubble_tea.jpg/220px-Classic_bubble_tea.jpg></div>
-        <p class="column">tāng<br>汤<br>Soup<br><img class="foodImg" src=https://www.gimmesomeoven.com/wp-content/uploads/2017/01/Chinese-Hot-and-Sour-Soup-Recipe-1-2.jpg></p>
-        <a href=https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery>The best Chinese resturaunt in every state: The Daily Meal</a>
+
+      <div class="row">
+        <div class="example1" class="header">
+          <h1>BASIC CONVERSATIONAL PHRASES</h1>
+        </div>
+
+        <div>
+          <p class="column3"> 1. <br>Nǐ hǎo<br>你好<br>Hello</p>
+          <p class="column3">2. <br>Zàijiàn<br>再见<br>Goodbye</p>
+          <p class="column3">3. <br>Duìbùqǐ<br>对不起<br>I'm sorry</p>
+          <p class="column4">4. <br>Xièxiè<br>谢谢<br>Thank you</p>
+          <p class="column4">5. <br>Wǒ tīng bù dǒng<br>我听不懂<br>I don't understand</p>
+          <p class="column4">6. <br>hǎo de<br>好的<br>Okay/good</p>
+        </div>
       </div>
     </div>
-</div>
 
+    <div id="Translator" class="tabcontent">
+    <div class="example1" class="header">
+      <h1>Translator</h1>
+    </div>
+    <textarea id="translate" rows="1" cols ="20">Translate from english</textarea>
+
+    	<button onclick="translateThis()">Translate</button>
+
+    <p id="demo"></p>
+    </div>
+
+<div class="parallax"></div>
+
+
+
+    <!-- <div id="Home" class="tabcontent">
+    <div class="example1">
+    <h1>LANGUAPEDIA</h1>
+  </div>
+  <img id="HP_pic" align= right src="https://assets.nst.com.my/images/articles/13ntforeignlanguage2_1518503581.jpg"/>
+
+  <div class="Page" align=left>
+  <p>The <strong>Must-Have</strong></p>
+  <p>Ultimate</p>
+  <p><strong>Language</strong> Guide</p>
+</div>
+</div> -->
+
+<!-- <div id="Popular Trends in China" class="tabcontent">
+<div class="example1">
+<h1>MUSIC</h1>
+</div>
+<p>
+yīn yuè<br>音乐<br>Example sentence：<br>Nǐ xǐhuān tīng shénme yàng de yīnyuè?<br>你喜欢听什么样的音乐<br>What kind of music do you like to listen to?<br><br>
+Here are some music artists that are very popular in China right now:<br><br>
+1. Joker Xue：<br>
+<a href=https://www.youtube.com/watch?v=9LFk4TmBFY4>  你还要我怎样 - What do you want me to do</a><br><a href= https://www.youtube.com/watch?v=XKuL5xaKZHM>演员 - The Actress</a><br>
+2. JJ Lin<br>
+<a href=https://www.youtube.com/watch?v=vsBf_0gDxSM> 可惜沒如果 - If only</a><br>
+<a href=https://www.youtube.com/watch?v=LWV-f6dMN3Q> 修炼爱情 - Practice Love</a><br>
+3. Eric Chou<br>
+<a href=https://www.youtube.com/watch?time_continue=1&v=Ew4VvF0DPMc> 以後別做朋友 - Let's not be friends in the future</a><br>
+<a href=https://www.youtube.com/watch?v=TGIdRRuN7b4>   我愛過你 - I loved you</a><br>
+4. Michael Wong
+<a href=https://www.youtube.com/watch?v=bBcp_ljCBGU> 童话 - Fairytale</a><br>
+5. Eason Chan
+<a href=https://www.youtube.com/watch?v=UsFQ9kbpQhw> 好久不见 - Long time no see</a><br><br>
+
+<div class="example1">
+<h1>TV SHOWS</h1>
+</div>
+<br>Diàn shì jù<br>电视剧<br>Nín zuì xǐhuān de diànshìjù shì shénme<br>你最喜欢的电视剧是什么<br>What is your favorite TV Show?<br>
+<br>Here are some popular TV shows in China right now:<br><br>
+1. The Story Of Minglan 知否知否应是绿肥红瘦 <br>
+2. Anti-Japanese 荡寇 <br>
+3. I Will Never Let You Go 小女花不弃 <br>
+4. Story of Yangxi Palace 延禧攻略 <br>
+5. Happy Camp <br>
+6. Ashes of Love 香蜜沉沉烬如霜 <br>
+</p>
+</div> -->
+
+
+<!-- <div class ="row">
+<div id="Food" class="tabcontent">
+<div class="example1">
+<h1>FOOD</h1>
+</div>
+<div> Do you ever find yourself at a Chinese restaurant having no idea what to order? Well you’ve come to the right place! Here are the most popular dishes in the Chinese cuisine that you need to try ASAP!<br>
+<div class="column"> Jiǎozi<br>饺子<br>Dumplings<br><img class="foodImg" src= http://s15.sinaimg.cn/mw690/a5bdca08gx6CKV4hHf86e&690> </div>
+<div class="column">Bāozi<br>包子<br>steamed bun<br><img class="foodImg" src= https://omnivorescookbook.com/wp-content/uploads/2018/01/Kimchi-Pork-Steamed-Bun-9.jpg></div>
+<div class="column">Miàntiáo<br>面条<br>noodles<br><img class="foodImg" src=https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodles4-1-600x900.jpg></div>
+<div class="column">chá<br>茶<br>Tea<br><img class="foodImg" src=https://st2.depositphotos.com/1761693/7800/i/950/depositphotos_78002316-stock-photo-green-tea-with-jasmin-top.jpg></div>
+<div class="column">nǎichá<br>奶茶<br>Milk tea<br><img class="foodImg" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Classic_bubble_tea.jpg/220px-Classic_bubble_tea.jpg></div>
+<p class="column">tāng<br>汤<br>Soup<br><img class="foodImg" src=https://www.gimmesomeoven.com/wp-content/uploads/2017/01/Chinese-Hot-and-Sour-Soup-Recipe-1-2.jpg></p>
+<a href=https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery>The best Chinese resturaunt in every state: The Daily Meal</a>
+</div>
+</div>
+</div> -->
+<!--
 
 <div id="History" class="tabcontent">
-  <div class="example1">
-    <h1>HISTORY</h1>
-  </div>
+<div class="example1">
+<h1>HISTORY</h1>
+</div> -->
 
-
-</div>
+<!--
 
 <div id="Conversation" class="tabcontent">
-<div class="row">
+  <div class="row">
 
     <div class="example1">
       <h1>BASIC WORDS</h1>
@@ -126,12 +269,12 @@
       <p id="ni">Sentence:<br>Tā hěn měilì<br>她<strong>很</strong>美丽。<br>She is very beautiful.</p>
       <p id="wo">Sentence:<br>Wǒ bùyào qù xuéxiào.<br>我<strong>不</strong>要去学校<br>I do not want to go to school.</p>
     </div>
-    </div>
+  </div>
 
-<div class="row">
-      <div class="example1">
-        <h1>BASIC CONVERSATIONAL PHRASES</h1>
-      </div>
+  <div class="row">
+    <div class="example1">
+      <h1>BASIC CONVERSATIONAL PHRASES</h1>
+    </div>
 
     <div>
       <p class="column3"> 1. <br>Nǐ hǎo<br>你好<br>Hello</p>
@@ -142,7 +285,7 @@
       <p class="column4">6. <br>hǎo de<br>好的<br>Okay/good</p>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
