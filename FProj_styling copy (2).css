@@ -13,10 +13,13 @@ html {
 .header{
   font-family: sans-serif;
   font-weight: lighter;
-  text-align: center;
+  text-align: left;
   background-color: : #e8aba0;
   color: black;
-  font-size: 40px;
+  font-size: 20px;
+  padding: 8%;
+
+
 }
 
 #HP_pic{
@@ -197,12 +200,6 @@ color: white;
 }
 
   width: 16.6%;}
-
-
-
-
-
-
 
 
 
