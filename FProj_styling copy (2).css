@@ -8,7 +8,7 @@ html {
   text-align: center;
   font-size: 30px;
   padding: 3%;
-  background-image: url('https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
+  background-image: url('https://chinesenewyear.imgix.net/assets/images/21-things-you-didnt-know-about-chinese-new-year/chinese-new-year-lanterns.jpg?q=50&w=640&h=360&auto=format');
 }
 .header{
   font-family: sans-serif;
@@ -61,7 +61,7 @@ html {
   float: right;
   border-radius: 50px;
 }
-#tvshow{
+.tvshow{
   height: 40%;
   width: 40%;
   float: right;
@@ -71,12 +71,6 @@ html {
   height: 380px;
   width: 700px;
   float: center;
-  border-radius: 50px;
-}
-#happycamp{
-  height: 40%;
-  width: 40%;
-  float: right;
   border-radius: 50px;
 }
 .description{
@@ -111,12 +105,18 @@ html {
   width: 400px;
   height: 268px;
   border-radius: 50px;
+  margin-left: 70px;
+  margin-right:70px;
+  margin-bottom: 30px;
 }
 .column6{
   float: left;
   width: 400px;
   height: 268px;
+  margin-left: 70px;
+  margin-right:60px;
   border-radius: 50px;
+  margin-bottom: 30px;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -173,20 +173,17 @@ body, html {
 }
 
 
-
 .parallax {
-  /* The image used */
   background-image: url('https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
 
-  height: 40%;
+  height: 60%;
 
-  /* Create the parallax scrolling effect */
+  Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 /* Buttons and stuff */
@@ -236,7 +233,7 @@ body, html {
 
   /* Style tab links */
   .tablink {
-    background-color: #bae3ff;
+    background-color: #403232;
     color: white;
     float: left;
     border: none;
@@ -258,10 +255,11 @@ body, html {
   #Home {background-color: #f5c8c1;
   padding: 5%;
   padding-bottom: 30%;}
-  #History {background-color: #b4cee0;}
+  #Holidays {background-color: #b5d1ff}
   #Entertainment {background-color: #f5c8c1;}
   #Food {background-color: #ffd9a3;}
   #Conversation {background-color: white;}
+<<<<<<< HEAD
   #Translator {background-color: #bfebb2;}
 
 
@@ -287,3 +285,6 @@ body, html {
   #submit:hover{
   	background-color: #3a8;
   }
+=======
+  #Tourist {background-color: #bfebb2;}
+>>>>>>> withTabcontent
