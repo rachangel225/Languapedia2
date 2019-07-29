@@ -24,6 +24,9 @@ function translateThis(){
   }
 }
 
+// Wrap every letter in a spa
+
+
 // function tabOpen(evt, cityName) {
 //   // Hide all elements with class="tabcontent" by default */
 //   var i, tabcontent, tablinks;
