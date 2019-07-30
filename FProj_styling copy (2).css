@@ -172,8 +172,8 @@ html {
 body, html {
   height: 100%;
   margin: 0;
-  padding-left: 2%;
-  padding-right: 2%;
+  /* padding-left: 2%;
+  padding-right: 2%; */
 }
 
 
