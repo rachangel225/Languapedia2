@@ -5,10 +5,12 @@ html {
 }
 
 .Title{
+  color: white;
   text-align: center;
   font-size: 30px;
   padding: 3%;
-  background-image: url('https://chinesenewyear.imgix.net/assets/images/21-things-you-didnt-know-about-chinese-new-year/chinese-new-year-lanterns.jpg?q=50&w=640&h=360&auto=format');
+  background-image: url('https://www.holoong.com/uploadproduct/2017-11-20/big/042001190120149242.jpg');
+  background-position: bottom;
 }
 .header{
   font-family: sans-serif;
@@ -173,17 +175,6 @@ body, html {
 }
 
 
-.parallax {
-  background-image: url('https://pic.chinesefontdesign.com/uploads/2017/03/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
-
-  height: 60%;
-
-  Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 /* Buttons and stuff */
