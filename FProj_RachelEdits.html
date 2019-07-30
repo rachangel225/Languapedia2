@@ -22,55 +22,37 @@
 
 
 <body>
-
   <div class="Title">
     <h1>Languapedia</h1>
   </div>
 
-  <button class="tablink" onclick="openPage('Home', this)" >Home</button>
-  <button class="tablink" onclick="openPage('Holidays', this)" >Holidays</button>
+
+
+  <button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('History', this)" >History</button>
   <button class="tablink" onclick="openPage('Entertainment', this)">Entertainment</button>
   <button class="tablink" onclick="openPage('Food', this)">Food</button>
   <button class="tablink" onclick="openPage('Conversation', this)">Conversation</button>
-  <button class="tablink" onclick="openPage('Tourist', this)">Toruist attractions</button>
+  <button class="tablink" onclick="openPage('Translator', this)">Translator</button>
 
 
-<<<<<<< HEAD
   <div id="Home" class="tabcontent">
     <!-- <div class="example1" class="header">
       <h1>LANGUAPEDIA</h1>
     </div> -->
     <img id="HP_pic" align= right src="https://assets.nst.com.my/images/articles/13ntforeignlanguage2_1518503581.jpg"/>
-=======
-
-
-  <div id="Home" class="tabcontent" style="display:block" >
-    <img id="HP_pic" align= right src="https://www.rd.com/wp-content/uploads/2016/12/01-The-Surprising-Reason-Red-Is-the-Official-Color-of-Chinese-New-Year-533275087_curraheeshutter.jpg"/>
->>>>>>> withTabcontent
 
     <div class="Page" align=left>
       <p>The <strong>Must-Have</strong></p>
       <p>Ultimate</p>
-      <p><strong>Language</strong> Guide:</p>
-      <p><strong>Chinese</strong></p>
-    </div><br>
-
-    <div class="moving-letters">
-      <h1 class="ml12">Translator</h1>
-  </div>
-    <div>
-      <br><br><br><br><br>
-    <textarea id="translate" rows="3" cols ="40">Translate from english</textarea>
-
-    <button onclick="translateThis()">Translate</button>
-    <p id="demo"></p>
+      <p><strong>Language</strong> Guide</p>
     </div>
-</div>
+  </div>
 
 
-  <div id="Holidays" class="tabcontent">
+
+  <div id="History" class="tabcontent">
     <div class="moving-letters">
-    <div class="parallax">
       <h1 class="ml12">Holidays</h1>
   <p> 1. Chūnjié<br> <h2>春节</h2></p>
   <p class="description">Chinese New Year: Chinese New Year, is celebrated on the first day of the Lunar calender, which is usually between the end of January and the end of February. The tradition dates back 4000 years, and consists of large family gatherings with many different types of food, especially rice cakes and dumplings. You will often see firecrackers, lion dancing, the hanging of lanterns, money given in red envelopes, and many paper decorations being put up around each home for good fortune. Red is the main color for the festival, as it symbolizes happiness and good luck. The spring festivities usually start on New Years Eve and continues for 15 days, ending with the Lantern Festival. </p>
@@ -97,9 +79,10 @@
     <img class="column6" src=https://news.cgtn.com/news/34676a4e30597a6333566d54/img/a4eae439-0582-4664-bf4c-328de9764776.jpg> </p>
 
 
-</div>
+
   </div>
 </div>
+
 
 
   <div id="Entertainment" class="tabcontent">
@@ -107,7 +90,6 @@
       <h1 class="ml12">Music</h1>
     </div>
     <div class="header">
-      <img class="tvshow" src=https://media1.tenor.com/images/a9feca415a6cdbe2fec2aee5e54adf18/tenor.gif?itemid=5086843>
       yīn yuè<br><strong>音乐</strong><br>Music<br>Example sentence：<br>Nǐ xǐhuān tīng shénme yàng de yīnyuè?<br>你喜欢听什么样的<strong>音乐</strong>?<br>What kind of music do you like to listen to?<br><br>
       Here are some music artists that are very popular in China right now:<br><br>
       1. Joker Xue：<br>
@@ -116,7 +98,6 @@
       <a href=https://www.youtube.com/watch?v=vsBf_0gDxSM> 可惜沒如果 - If only</a><br>
       <a href=https://www.youtube.com/watch?v=LWV-f6dMN3Q> 修炼爱情 - Practice Love</a><br>
       3. Eric Chou<br>
-      <img class="tvshow" src=https://66.media.tumblr.com/cd467f4fd84845d3e944ec1ab0f68fff/tumblr_oufdcdzuON1ujw6vzo1_500.gif>
       <a href=https://www.youtube.com/watch?time_continue=1&v=Ew4VvF0DPMc> 以後別做朋友 - Let's not be friends in the future</a><br>
       <a href=https://www.youtube.com/watch?v=TGIdRRuN7b4>   我愛過你 - I loved you</a><br>
       4. Michael Wong
@@ -130,12 +111,12 @@
       </div>
 
       <div class="header">
-        <img class="tvshow" src= https://1.bp.blogspot.com/-elF1SfYIa3w/XESdhow_kUI/AAAAAAAASlY/WBNvO-_oreYE6FZovg2NK06YCvaKr_t6ACLcBGAs/s1600/Cover%2BWedding%2BMinglan%2BZhao%2BLiying%2BFeng%2BShaofeng.jpg>
+        <img id="tvshow" src= https://1.bp.blogspot.com/-elF1SfYIa3w/XESdhow_kUI/AAAAAAAASlY/WBNvO-_oreYE6FZovg2NK06YCvaKr_t6ACLcBGAs/s1600/Cover%2BWedding%2BMinglan%2BZhao%2BLiying%2BFeng%2BShaofeng.jpg>
         <br>Diàn shì jù<br>电视剧<br>Nín zuì xǐhuān de diànshìjù shì shénme<br>你最喜欢的电视剧是什么<br>What is your favorite TV Show?<br>
         <br>Here are some popular TV shows in China right now:<br><br>
         1. The Story Of Minglan 知否知否应是绿肥红瘦 <br>
         2. Anti-Japanese 荡寇 <br>
-        <img class="tvshow" src=http://2.bp.blogspot.com/-GDVhjAXfUkA/VApAgAim85I/AAAAAAAAAX8/ZxAvJBNZ6LA/s1600/hk.png>
+        <img id="happycamp" src=http://2.bp.blogspot.com/-GDVhjAXfUkA/VApAgAim85I/AAAAAAAAAX8/ZxAvJBNZ6LA/s1600/hk.png>
         3. I Will Never Let You Go 小女花不弃 <br>
         4. Story of Yangxi Palace 延禧攻略 <br>
         5. Happy Camp <br>
@@ -149,7 +130,7 @@
       <h1 class="ml12">Food</h1>
     </div>
     <div class="header">
-      Do you ever find yourself at a Chinese restaurant having no idea what to order? Well you’ve come to the right place! Here are the most popular dishes in the Chinese cuisine that you need to try ASAP!<br><br>
+      Do you ever find yourself at a Chinese restaurant having no idea what to order? Well you’ve come to the right place! Here are the most popular dishes in the Chinese cuisine that you need to try ASAP!<br>
       <div class="column"> Jiǎozi<br>饺子<br>Dumplings<br><img class="foodImg" src= http://s15.sinaimg.cn/mw690/a5bdca08gx6CKV4hHf86e&690> </div>
       <div class="column">Bāozi<br>包子<br>steamed bun<br><img class="foodImg" src= https://omnivorescookbook.com/wp-content/uploads/2018/01/Kimchi-Pork-Steamed-Bun-9.jpg></div>
       <div class="column">Miàntiáo<br>面条<br>noodles<br><img class="foodImg" src=https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodles4-1-600x900.jpg></div>
@@ -157,18 +138,16 @@
       <div class="column">nǎichá<br>奶茶<br>Milk tea<br><img class="foodImg" src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Classic_bubble_tea.jpg/220px-Classic_bubble_tea.jpg></div>
       <p class="column">tāng<br>汤<br>Soup<br><img class="foodImg" src=https://www.gimmesomeoven.com/wp-content/uploads/2017/01/Chinese-Hot-and-Sour-Soup-Recipe-1-2.jpg></p>
       <a href=https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery>The best Chinese resturaunt in every state: The Daily Meal</a>
-      <a href=https://www.youtube.com/watch?v=M6DD504lDac>How to make steamed buns</a>
     </div>
   </div>
 
 
     <div id="Conversation" class="tabcontent">
-      <div class="moving-letters">
-        <h1 class="ml12">Basic words</h1>
-      </div>
       <div class="row">
         <div class="column2">
-          <br><br><br>
+          <div class="moving-letters">
+            <h1 class="ml12">Basic words</h1>
+          </div>
           <p id="wo">1. <br>Wǒ<br><strong>我</strong><br>I</p>
           <p id="ni">2.<br>Nǐ<br><strong>你</strong><br>You</p>
           <p id="wo">3.<br>Jiā<br><strong>家</strong><br>Home</p>
@@ -178,7 +157,6 @@
           <p id="wo">7.<br> Bù<br><strong>不</strong><br>No</p>
         </div>
         <div class="column2">
-          <br><br><br>
           <p id="wo">Sentence:<br>Wǒ wǔ suìle<br><strong>我</strong>五岁了。<br>I am five years old.</p>
           <p id="ni">Sentence:<br>Nǐ jiào shénme míngzì<br><strong>你</strong>叫什么名字<br>What is your name?</p>
           <p id="wo">Sentence:<br>Wǒ xiǎng huí jiā<br>我想回<strong>家</strong>。<br>I want to go home.</p>
@@ -194,7 +172,6 @@
           <div class="moving-letters">
             <h1 class="ml12">Basic conversational phrases</h1>
           </div>
-          <br><br><br>
           <p class="column3"> 1. <br>Nǐ hǎo<br>你好<br>Hello</p>
           <p class="column3">2. <br>Zàijiàn<br>再见<br>Goodbye</p>
           <p class="column3">3. <br>Duìbùqǐ<br>对不起<br>I'm sorry</p>
@@ -202,16 +179,16 @@
           <p class="column4">5. <br>Wǒ tīng bù dǒng<br>我听不懂<br>I don't understand</p>
           <p class="column4">6. <br>hǎo de<br>好的<br>Okay/good</p>
         </div>
+
+        <!-- Quiz part -->
+  <br>
+  <div id="quiz"></div>
+  <button id="submit">Submit Quiz</button>
+  <div id="results"></div>
       </div>
 
-      <!-- Quiz part -->
-<br>
-<div id="quiz"></div>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-<!-- partial -->
 
-</div>
+<!-- partial -->
       <!-- <div class="question">
         <p>1. What is "I don't understand" in Mandarin?</p>
         <label>
@@ -274,80 +251,22 @@
       </div>
     </div> -->
 
-<div id="Tourist" class="tabcontent" class="parallax">
-  <div class="moving-letters">
-    <h1 class="ml12">Popular Tourist attractions</h1>
-  </div>
-  <br><br><br>
-  <h2>Forbidden City</h2>
-  <p>"The Forbidden City (Chinese: 故宫; pinyin: Gùgōng) is a palace complex in central Beijing, China. It houses the Palace Museum, and was the former Chinese imperial palace from the Ming dynasty to the end of the Qing dynasty (the years 1420 to 1912). The Forbidden City served as the home of emperors and their households as well as the ceremonial and political center of Chinese government for almost 500 years.
+    <div id="Translator" class="tabcontent">
+      <div class="moving-letters">
+        <h1 class="ml12">Translator</h1>
+    </div>
+    <textarea id="translate" rows="1" cols ="20">Translate from english</textarea>
 
-Constructed from 1406 to 1420, the complex consists of 980 buildings and covers 72 hectares (over 180 acres). The palace exemplifies traditional Chinese palatial architecture,[6] and has influenced cultural and architectural developments in East Asia and elsewhere. The Forbidden City was declared a World Heritage Site in 1987,[6] and is listed by UNESCO as the largest collection of preserved ancient wooden structures in the world.
-<img id="zongzi" src=https://3iqhm91wtiv21y4zza4dqwj2-wpengine.netdna-ssl.com/wp-content/uploads/China-Beijing-Forbidden-City-Two-Great-Halls-1440x961.jpg>
-Since 1925, the Forbidden City has been under the charge of the Palace Museum, whose extensive collection of artwork and artifacts were built upon the imperial collections of the Ming and Qing dynasties. Part of the museum's former collection is now in the National Palace Museum in Taipei. Both museums descend from the same institution, but were split after the Chinese Civil War. Since 2012, the Forbidden City has seen an average of 15 million visitors annually, and received more than 16 million visitors in 2016 and 2017." <br>
- - from <a href= https://en.wikipedia.org/wiki/Forbidden_City>Wikipedia</a><br><br><img class="column5" src=http://turskazka.by/files/tour/105/%20tian.jpg><img class="column6" src=https://i.dailymail.co.uk/i/pix/2016/06/14/00/353E161700000578-0-image-a-2_1465860586345.jpg></p>
-<h2>The Great Wall of China <strong>(长城)</strong></h2>
- <p>"The Great Wall of China, one of the greatest wonders of the world, was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 21,196 kilometers from east to west of China.
+    	<button onclick="translateThis()">Translate</button>
 
-With a history of about 2,700 years, some of the Great Wall sections are now in ruins or have disappeared. However, the Great Wall of China is still one of the most appealing attractions all around the world owing to its architectural grandeur and historical significance." <br> - from<a href=https://www.travelchinaguide.com/china_great_wall/>Travel China Guide</a><br>
-<img class="column5" src=https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i2Ccl9tjiZIw/v1/-1x-1.jpg> <img class="column6" src=https://images2.alphacoders.com/482/thumb-1920-482724.jpg>
-</p>
-<h2>Terracotta army</h2>
-<a href = https://www.youtube.com/watch?v=4c_ADqshdSA>Terracotta Army: The greatest archaeological find of the 20th century - BBC News</a>
-<p>"The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting the emperor in his afterlife.
+    <p id="demo"></p>
+    </div>
 
-The figures, dating from approximately the late third century BCE,[1] were discovered in 1974 by local farmers in Lintong County, outside Xi'an, Shaanxi, China. The figures vary in height according to their roles, with the tallest being the generals. The figures include warriors, chariots and horses. Estimates from 2007 were that the three pits containing the Terracotta Army held more than 8,000 soldiers, 130 chariots with 520 horses, and 150 cavalry horses, the majority of which remained buried in the pits near Qin Shi Huang's mausoleum.[2] Other terracotta non-military figures were found in other pits, including officials, acrobats, strongmen, and musicians."<br> -from <a href=https://en.wikipedia.org/wiki/Terracotta_Army>Wikipedia</a><br>
-<img class="column5" src=https://ichef.bbci.co.uk/news/660/cpsprodpb/108A9/production/_101735776_gettyimages-71400772.jpg><img class="column6" src=https://static01.nyt.com/images/2014/02/09/travel/09-cultured-xian-slide-LGEK/09-cultured-xian-slide-LGEK-videoLarge.jpg></p>
+<div class="parallax"></div>
 
-
-<<<<<<< HEAD
-<script>
-// Wrap every letter in a span
-$('.ml12').each(function(){
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
-
-ml.timelines["ml12"] = anime.timeline({loop: true})
-  .add({
-    targets: '.ml12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: function(el, i) {
-      return 500 + 30 * i;
-    }
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: function(el, i) {
-      return 100 + 30 * i;
-    }
-  });
-</script>
-
-<style>
-.ml12 {
-  font-weight: 200;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-}
-
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-</style>
-=======
 
 
 <script  src="quiz.js"></script>
->>>>>>> fixing
 
 
 </body>
