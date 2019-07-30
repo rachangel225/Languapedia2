@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: century;
   font-weight: 10px;
   scroll-behavior: smooth;
 }
@@ -9,11 +9,13 @@ html {
   text-align: center;
   font-size: 30px;
   padding: 3%;
-  background-image: url('https://www.holoong.com/uploadproduct/2017-11-20/big/042001190120149242.jpg');
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/16/79/2259b67a9c03dca.jpg");
+  background-repeat: none;
+  background-size: cover;
   background-position: bottom;
 }
 .header{
-  font-family: sans-serif;
+  font-family: century;
   font-weight: lighter;
   text-align: left;
   background-color: : #e8aba0;
@@ -24,6 +26,9 @@ html {
 
 }
 
+.link{
+  color: green;
+}
 #HP_pic{
 	height: 65%;
 	width: 50%;
@@ -104,10 +109,17 @@ html {
 }
 .column5{
   float: right;
+<<<<<<< HEAD
   width: 440px;
   height: 320px;
   border-radius: 70px;
   margin-left: 70px;
+=======
+  width: 400px;
+  height: 268px;
+  border-radius: 50px;
+  margin-left: 40px;
+>>>>>>> 218de67216d5b61a9a316eca2a714c565651646a
   margin-right:70px;
   padding-top:30px;
   padding-bottom: 30px;
@@ -162,7 +174,7 @@ html {
 
 
 .Page {
-  font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font: 13px century;
   text-align: left;
     font-size: 60px;
     color: #3b3b3b;
@@ -241,34 +253,30 @@ body, html {
   }
 
 
-  #Home {background-color: #f5c8c1;
-  padding: 5%;
-  padding-bottom: 30%;}
-  #Holidays {background-color: #b5d1ff}
-  #Entertainment {background-color: #f5c8c1;}
-  #Food {background-color: #ffd9a3;}
-  #Conversation {background-color: white;}
-  #Tourist {background-color: #bfebb2;}
-
-  .question{
-  	font-weight: 600;
+  #Home {  background: url("https://media2.giphy.com/media/9svhot8rVfudG/giphy.gif");
+    background-repeat: none;
+    background-size: cover;
   }
-  .answers {
-      margin-bottom: 20px;
+  #Holidays{
+    background: url("https://image.freepik.com/free-vector/abstract-colorful-pastel-gradient-tone_38782-12.jpg");
+    background-repeat: none;
+    background-size: cover;
   }
-  #submit{
-  	font-family: sans-serif;
-  	font-size: 20px;
-  	background-color: #297;
-  	color: #fff;
-  	border: 0px;
-  	border-radius: 3px;
-  	padding: 20px;
-  	cursor: pointer;
-  	margin-bottom: 20px;
-  }
-  #submit:hover{
-  	background-color: #3a8;
+  #Entertainment {
+    background: url("https://webgradients.com/public/webgradients_png/034%20Lemon%20Gate.png");
+    background-repeat: none;
+    background-size: cover;}
+  #Food {background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8POtL4WBGPjADFYhb7B8F6-z-ih_9GhX41oVmijZLCNEoLOsf");
+  background-repeat: none;
+  background-size: cover;}
+  #Conversation {
+    background: url("");
+    background-repeat: none;
+    background-size: cover;}
+  #Tourist{
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAnjqibR3UJQDo0oAINCGgzPKHbjS00W_a8sV_nhhpom9Xps2V");
+      background-repeat: none;
+      background-size: cover;
   }
 
 
