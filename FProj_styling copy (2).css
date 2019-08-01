@@ -255,6 +255,7 @@ body, html {
   #Home {  background: url("https://media2.giphy.com/media/9svhot8rVfudG/giphy.gif");
     background-repeat: none;
     background-size: cover;
+    display:block;
   }
   #Holidays{
     background: url("https://image.freepik.com/free-vector/abstract-colorful-pastel-gradient-tone_38782-12.jpg");
@@ -280,30 +281,6 @@ body, html {
 
 
 
-  .accordion {
-    background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  /* transition: max-height 0.2s ease-out; */
-}
 
 #lion_dance{
   width: 80%;
@@ -317,4 +294,37 @@ body, html {
 .sectionTitle{
   font-size: 40px;
 
+}
+
+
+
+
+
+
+
+
+
+
+/* quiz */
+
+.question {
+  padding: 1em;
+  background: #eee;
+  margin-bottom: 1em;
+}
+
+.quiz-msg {
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.quiz-msg.correct {
+  background: #e8ffc6;
+}
+.quiz-msg.incorrect {
+  background: #ffe5cc;
+}
+
+.correct {
+  background: green;
+  padding: 0.2em;
 }
