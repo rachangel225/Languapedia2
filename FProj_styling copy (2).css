@@ -5,14 +5,14 @@ html {
 }
 
 .Title{
-  color: white;
+  color: #060f3d;
   text-align: center;
   font-size: 30px;
   padding: 3%;
-  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/16/79/2259b67a9c03dca.jpg");
+  background-image: url("https://i.imgur.com/yjc7kFA.jpg");
   background-repeat: none;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
 }
 .header{
   font-family: century;
@@ -185,7 +185,6 @@ html {
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
   height: 100%;
-  margin: 0;
   /* padding-left: 2%;
   padding-right: 2%; */
 }
