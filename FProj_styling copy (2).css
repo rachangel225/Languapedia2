@@ -1,6 +1,6 @@
 html {
-  font-family: century;
-  font-weight: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
   scroll-behavior: smooth;
 }
 
@@ -15,7 +15,7 @@ html {
   background-position: top;
 }
 .header{
-  font-family: century;
+  font-family: sans-serif;
   font-weight: lighter;
   text-align: left;
   background-color: : #e8aba0;
@@ -176,7 +176,8 @@ html {
 
 
 .Page {
-  font: 13px century;
+  font: 13px sans-serif;
+  font-weight: lighter;
   text-align: left;
     font-size: 60px;
     color: #3b3b3b;
